@@ -40,17 +40,6 @@ public class Startup
 			input.parameters);
 
 		return response;
-
-		IDictionary<string, object> dict = WsProxy.AsDictionary (response);
-
-		Console.WriteLine ("Count: " + dict.Count);
-		foreach (string key in dict.Keys)
-		{
-			Console.WriteLine (key + ": " + dict[key].ToString());
-	
-		}
-
-        return dict;
     }
 }
 
